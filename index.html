@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rede Labbar - Exercises</title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="min-h-screen bg-slate-950 text-slate-50 flex items-center justify-center"
+  >
+    <main
+      class="w-full max-w-5xl px-4 grid gap-6 md:grid-cols-[1.1fr,1.2fr]"
+    >
+
+      <section class="space-y-4">
+        <h1 class="text-2xl font-semibold">JavaScript Exercises</h1>
+
+        <ol class="list-decimal list-inside space-y-1 text-sm">
+          <li><code>sumArray(arr)</code></li>
+          <li><code>longNames(names)</code></li>
+          <li><code>countWords(str)</code></li>
+        </ol>
+
+        <button
+          id="run-btn"
+          class="mt-2 inline-flex items-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-emerald-400 active:scale-[0.98] transition"
+        >
+          Run All Exercises
+        </button>
+      </section>
+
+
+
+
+      <section class="flex items-stretch">
+        <div
+          class="w-full rounded-xl border border-slate-700 bg-slate-950 overflow-hidden shadow-xl"
+        >
+          <header
+            class="flex items-center gap-2 px-3 py-2 border-b border-slate-700 bg-slate-900"
+          >
+            <span class="h-2.5 w-2.5 rounded-full bg-red-500"></span>
+            <span class="h-2.5 w-2.5 rounded-full bg-amber-400"></span>
+            <span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+          </header>
+
+          <div
+            id="console-output"
+            class="px-3 py-3 font-mono text-xs md:text-sm max-h-80 overflow-y-auto bg-slate-950"
+          >
+            <div class="text-slate-400">
+               <strong>Run All Exercises</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
